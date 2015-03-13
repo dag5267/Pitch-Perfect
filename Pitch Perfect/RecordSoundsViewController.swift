@@ -98,7 +98,10 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as PlaySoundsViewController //create object to play sound
             let data = sender as RecordedAudio //get the audio info
             playSoundsVC.recordedAudio = data //assign audio info to property to be passed
+        } else {
+            println("Not our segue")
         }
+        
     }
     
     @IBAction func StopRecording(sender: UIButton) {

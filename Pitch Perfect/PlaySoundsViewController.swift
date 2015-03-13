@@ -22,17 +22,18 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        audioPlayer = AVAudioPlayer(contentsOfURL: recordedAudio.filePathUrl, error: nil) //initalize player with path to audio file
-        audioPlayer.enableRate = true  //allow changing of audio play speed
-        audioEngine = AVAudioEngine() //assign AV method
-        audioFile = AVAudioFile(forReading: recordedAudio.filePathUrl, error: nil)  //var to hold file path to audio file
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-
+    override func viewWillAppear(animated: Bool) {
+        audioPlayer = AVAudioPlayer(contentsOfURL: recordedAudio.filePathUrl, error: nil) //initalize player with path to audio file
+        audioPlayer.enableRate = true  //allow changing of audio play speed
+        audioEngine = AVAudioEngine() //assign AV method
+        audioFile = AVAudioFile(forReading: recordedAudio.filePathUrl, error: nil)  //var to hold file path to audio file
+    }
     
     
     func playAudioWithVariablePitch(pitch: Float) {
