@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2C2F702F1AB11CC80071FCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F702E1AB11CC80071FCAC /* AppDelegate.swift */; };
-		2C2F70311AB11CC80071FCAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F70301AB11CC80071FCAC /* ViewController.swift */; };
 		2C2F70341AB11CC80071FCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F70321AB11CC80071FCAC /* Main.storyboard */; };
 		2C2F70361AB11CC80071FCAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F70351AB11CC80071FCAC /* Images.xcassets */; };
 		2C2F70391AB11CC80071FCAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F70371AB11CC80071FCAC /* LaunchScreen.xib */; };
 		2C2F70451AB11CC80071FCAC /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F70441AB11CC80071FCAC /* Pitch_PerfectTests.swift */; };
+		2C2F70511AB11F440071FCAC /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F704E1AB11F440071FCAC /* PlaySoundsViewController.swift */; };
+		2C2F70521AB11F440071FCAC /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F704F1AB11F440071FCAC /* RecordedAudio.swift */; };
+		2C2F70531AB11F440071FCAC /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F70501AB11F440071FCAC /* RecordSoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		2C2F70291AB11CC80071FCAC /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F702D1AB11CC80071FCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2F702E1AB11CC80071FCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2F70301AB11CC80071FCAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C2F70331AB11CC80071FCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F70351AB11CC80071FCAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C2F70381AB11CC80071FCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2C2F703E1AB11CC80071FCAC /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F70431AB11CC80071FCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2F70441AB11CC80071FCAC /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
+		2C2F704E1AB11F440071FCAC /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		2C2F704F1AB11F440071FCAC /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		2C2F70501AB11F440071FCAC /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		2C2F702B1AB11CC80071FCAC /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				2C2F704E1AB11F440071FCAC /* PlaySoundsViewController.swift */,
+				2C2F704F1AB11F440071FCAC /* RecordedAudio.swift */,
+				2C2F70501AB11F440071FCAC /* RecordSoundsViewController.swift */,
 				2C2F702E1AB11CC80071FCAC /* AppDelegate.swift */,
-				2C2F70301AB11CC80071FCAC /* ViewController.swift */,
 				2C2F70321AB11CC80071FCAC /* Main.storyboard */,
 				2C2F70351AB11CC80071FCAC /* Images.xcassets */,
 				2C2F70371AB11CC80071FCAC /* LaunchScreen.xib */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F70311AB11CC80071FCAC /* ViewController.swift in Sources */,
+				2C2F70521AB11F440071FCAC /* RecordedAudio.swift in Sources */,
+				2C2F70511AB11F440071FCAC /* PlaySoundsViewController.swift in Sources */,
+				2C2F70531AB11F440071FCAC /* RecordSoundsViewController.swift in Sources */,
 				2C2F702F1AB11CC80071FCAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				2C2F704A1AB11CC80071FCAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F704B1AB11CC80071FCAC /* Build configuration list for PBXNativeTarget "Pitch PerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				2C2F704D1AB11CC80071FCAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
